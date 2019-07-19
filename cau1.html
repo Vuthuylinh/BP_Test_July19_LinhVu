@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 1</title>
+</head>
+<body>
+<script>
+    function findMaxScore(arr) {
+        let maxScore = arr[0];
+        for (i = 0; i < arr.length; i++) {
+            if (maxScore < arr[i]) {
+                maxScore = arr[i]
+            }
+
+        }
+        return maxScore;
+    }
+
+
+    let arrScore = [];
+    for (let i = 0; i < 10; i++) {
+        arrScore.push(Math.floor(Math.random() * 50));
+    }
+    document.write("Score list is: "+arrScore+ "<br>");
+
+    let maxScore1 = findMaxScore(arrScore);
+    document.write("Max score is: " + maxScore1);
+
+</script>
+</body>
+</html>

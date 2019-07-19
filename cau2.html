@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 2</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr,number) {
+        for(let i=0;i<arr.length;i++){
+            if(number===arr[i]){
+                arr.splice(i,1);
+            }
+        }
+        return arr;
+    }
+    let arr1=[12,6,4,12,4,12,3,7];
+    let arrAfterRemove= tryRemoveFromArray(arr1,12);
+    document.write(arrAfterRemove);
+
+</script>
+</body>
+</html>

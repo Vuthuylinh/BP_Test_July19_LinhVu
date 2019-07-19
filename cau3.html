@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau3</title>
+</head>
+<body>
+<script>
+    let number= parseInt(prompt("Enter a number: "));
+    function printFibonacci(number) {
+
+        let result = [0, 1];
+        for (let i = 2; i < number; i++) {
+            const a = (i - 1);
+            const b = (i - 2);
+            c=a+b;
+            result.push(c);
+        }
+        return result;
+
+    }
+
+   document.write(printFibonacci(number));
+
+
+
+</script>
+</body>
+</html>
